@@ -234,7 +234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  // add the DOM element
 	  var htmlId = opts.htmlId ? ' id="' + opts.htmlId + '"' : '';
-	  state.$el = angular.element('<div' + htmlId + '><canvas></canvas><div><span></span> | <span></span></div></div>').css(opts.styles);
+	  state.$el = angular.element('<div' + htmlId + '><canvas></canvas><div><span title="Watch count"></span> | <span title="Digest length"></span></div></div>').css(opts.styles);
 	  bodyEl.append(state.$el);
 	  var $watchCount = state.$el.find('span');
 	  var $digestTime = $watchCount.next();
